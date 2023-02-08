@@ -1,7 +1,10 @@
+Data Modelling for sql-challenge
+
+
 Dpartment
 -
-Dept_no string
-Name string
+Dept_no PK string
+Dept_Name string
 
 Dept_Emp
 -
@@ -10,12 +13,12 @@ Dept_no string FK >- Dpartment.Dept_no
 
 Dept_Manager
 -
-Dept_no string FK >- Dpartment.Dept_no
 Emp_no int FK >- Employees.emp_no
+Dept_no string FK >- Dpartment.Dept_no
 
 Employees
 -
-emp_no int FK >- Salaries.Emp_no
+emp_no PK int FK >- Salaries.Emp_no
 Emp_title_ID string FK >- Title.Title_ID
 Brith_Date Date(mm/dd/yy)
 First_name string
@@ -25,10 +28,10 @@ Hire_date Date(mm/dd/yy)
 
 Salaries
 -
-Emp_no string
+Emp_no PK int
 Salary int
 
 Title
 -
-Title_ID string
+Title_ID PK string
 Title string
