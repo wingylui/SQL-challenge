@@ -1,0 +1,38 @@
+Data Modelling for sql-challenge
+
+Dpartment
+-
+Dept_no PK Varchar
+Dept_Name Varchar
+
+Dept_Emp
+-
+Dept_Emp_no PK
+Emp_no int FK >- Employees.emp_no
+Dept_no Varchar FK >- Dpartment.Dept_no
+
+Dept_Manager
+-
+Dept_Manager_no PK
+Emp_no int FK >- Employees.emp_no
+Dept_no Varchar FK >- Dpartment.Dept_no
+
+Employees
+-
+emp_no PK int FK - Salaries.Emp_no
+Emp_title_ID Varchar FK >- Title.Title_ID
+Brith_Date Date(mm/dd/yy)
+First_name Varchar
+Last_name Varchar
+Sex Varcchar
+Hire_date Date(mm/dd/yy)
+
+Salaries
+-
+Emp_no PK int
+Salary int
+
+Title
+-
+Title_ID PK Varchar
+Title Varchar
