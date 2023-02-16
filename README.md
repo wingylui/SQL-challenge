@@ -11,4 +11,4 @@ This SQL challenge is using PostgreSQL to build up a small database with the six
 ![Entity Relationship Diagram](https://github.com/wingylui/SQL-challenge/blob/main/EmployeeSQL/Entity_Relationship_Diagram_for_employeeSQL.png)
 
 ---
-<b>Score for this assessment:</b> Have not been scored yet<br />
+<b>Score for this assessment:</b> 100 <br />
